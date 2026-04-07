@@ -1,0 +1,81 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Pasien</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+  <nav class="navbar">
+    <h2>🩺 Klinik Sehat</h2>
+    <div class="menu">
+      <a href="#home">Home</a>
+      <a href="#input">Input</a>
+      <a href="#data">Data</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="home-section" id="home">
+      <div class="home-text">
+        <h1>🩺 Klinik Sehat</h1>
+        <p>Aplikasi Data Pasien Modern & Mudah Digunakan</p>
+        <button onclick="scrollToInput()">Mulai Sekarang</button>
+      </div>
+
+      <div class="home-image">
+        <img src="https://cdn-icons-png.flaticon.com/512/3774/3774299.png" alt="dokter">
+      </div>
+    </div>
+    <div class="card">
+      <h2 id="input">Input Data Pasien</h2>
+
+      <input type="text" id="nama" placeholder="Nama pasien">
+      <input type="number" id="umur" placeholder="Umur">
+      <input type="text" id="keluhan" placeholder="Keluhan">
+      <input type="text" id="alamat" placeholder="Alamat">
+
+      <select id="jk">
+        <option value="">Jenis Kelamin</option>
+        <option value="Laki-laki">Laki-laki</option>
+        <option value="Perempuan">Perempuan</option>
+      </select>
+
+      <input type="date" id="tanggal">
+
+      <button id="btnTambah">Tambah</button>
+      <button id="btnUpdate">Update</button>
+    </div>
+
+    <div class="card">
+      <h3 id="data">Daftar Pasien</h3>
+
+      <input type="text" id="search" placeholder="Cari nama pasien...">
+
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>Nama</th>
+              <th>Umur</th>
+              <th>Keluhan</th>
+              <th>Alamat</th>
+              <th>JK</th>
+              <th>Tanggal</th>
+              <th>Status</th>
+              <th>Aksi</th>
+            </tr>
+          </thead>
+          <tbody id="hasil"></tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+  <script src="js/script.js"></script>
+  </body>
+  </html>

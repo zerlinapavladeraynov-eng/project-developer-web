@@ -1,0 +1,242 @@
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: linear-gradient(135deg, #dfe7e2, #c8e6c9);
+    margin: 0;
+    padding: 0;
+    color: #2c3e50;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #4caf50, #66bb6a);
+    padding: 15px 20px;
+    color: white;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+.navbar h2 {
+    margin: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    margin-left: 15px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.menu a:hover {
+    opacity: 0.8;
+    border-bottom: 2px solid white;
+}
+
+.home-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(135deg, #4caf50, #66bb6a);
+    color: white;
+    padding: 40px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+
+.home-text {
+    max-width: 50%;
+}
+
+.home-text h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.home-text p {
+    margin-bottom: 15px;
+}
+
+
+.home-text button {
+    background: white;
+    color: #4caf50;
+}
+
+
+.home-image img {
+    width: 200px;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 15px;
+}
+
+
+.card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+h2, h3 {
+    margin-bottom: 15px;
+}
+
+
+input, select {
+    padding: 10px;
+    width: 100%;
+    margin: 6px 0;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    outline: none;
+    transition: 0.2s;
+}
+
+input:focus, select:focus {
+    border-color: #4caf50;
+    background-color: #fff;
+    box-shadow: 0 0 6px rgba(76,175,80,0.3);
+}
+
+
+button {
+    padding: 10px 15px;
+    margin: 5px 3px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(135deg, #4caf50, #66bb6a);
+    color: white;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+
+button:nth-child(2) {
+    background: linear-gradient(135deg, #2196f3, #42a5f5);
+}
+
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    min-width: 600px;
+}
+
+th {
+    background: #4caf50;
+    color: white;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+tr:hover {
+    background: #e8f5e9;
+}
+
+
+.status {
+    font-weight: bold;
+    color: orange;
+}
+
+.status.selesai {
+    color: green;
+}
+
+
+@media (max-width: 600px) {
+
+    
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu {
+        margin-top: 10px;
+    }
+
+    .menu a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    
+    .home-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .home-text {
+        max-width: 100%;
+    }
+
+    .home-image img {
+        width: 150px;
+        margin-top: 20px;
+    }
+
+    
+    .container {
+        padding: 10px;
+    }
+
+   
+    .card {
+        padding: 15px;
+    }
+
+   
+    input, select {
+        font-size: 14px;
+    }
+
+   
+    button {
+        width: 100%;
+        margin: 5px 0;
+        font-size: 14px;
+    }
+
+    
+    th, td {
+        font-size: 12px;
+        padding: 6px;
+    }
+}
